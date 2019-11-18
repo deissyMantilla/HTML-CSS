@@ -1,0 +1,70 @@
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.padre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hijo {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+/* Media query
+
+@media < buscar en > and (condicion)*/
+
+@media all and (min-width: 600px) {
+  .izquierda,
+  .derecha {
+    /* se usa , (coma) para decir que las 
+        dos clases o etiquetas las a terner lo mismo */
+
+    /* flex 1 1 auto; combina 3 propiedades
+        flex-grow, flex-shrink y flex-basis */
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .articulo {
+    flex: 1 0;
+    order: 2;
+  }
+  .header {
+    order: 0;
+  }
+  .izquierda {
+    order: 1;
+  }
+  .derecha {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+header {
+  background-color: #589167;
+}
+article {
+  background-color: #207561;
+}
+.izquierda {
+  background-color: #a0cc78;
+}
+.derecha {
+  background-color: #da4302;
+}
+footer {
+  background-color: #696464;
+}

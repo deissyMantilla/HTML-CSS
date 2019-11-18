@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.parteSuperior {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 50px;
+  background-color: rgb(145, 64, 221);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.logoEmpresa {
+  background-color: rgb(96, 85, 148);
+}
+nav {
+  background-color: rgb(96, 85, 148);
+}
+.logosRedesSociales {
+  background-color: rgb(96, 85, 148);
+}
+.slogan {
+  background-color: goldenrod;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  border: 2px solid black;
+  background-color: rgb(201, 63, 21);
+}
+section {
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: rgb(49, 48, 48);
+  display: flex;
+  flex-wrap: wrap;
+}
+.productosALaVenta {
+  background-color: rgb(150, 25, 25);
+  width: 70%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: column;
+}
+.producto {
+  margin: 5px;
+  background-color: rgb(153, 144, 204);
+}
+.publicidad {
+  background-color: rgb(25, 150, 42);
+  width: 30%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.anuncio {
+  margin: 5px;
+  background-color: rgb(122, 122, 63);
+}
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}

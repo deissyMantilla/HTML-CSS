@@ -1,0 +1,39 @@
+*{
+    font-family: 'Abel', sans-serif;
+}
+h1{
+    color:rgba(255, 0, 0, 0.5);
+}
+button{
+    background-color: rgb(186, 125, 243);
+    border: none;
+}
+button:hover{
+background-color: rgb(73, 136, 115);
+}
+button:active{
+    background-color: rgb(39, 31, 112);
+    }
+    
+/* RBGA
+color con transparencia donde 0 es transparente y 1 no tiene transparencia
+Ej:
+h1{
+    color:rgba(255, 0, 0, 0.5);
+}
+
+Paginas de paletas de colores:
+https://www.w3schools.com/cssref/css_colors.asp
+https://htmlcolorcodes.com/es/
+https://helpx.adobe.com/es/illustrator/using/adobe-color-themes.html#AccesoalpaneldetemasdeAdobeColor
+https://color.adobe.com/es/create/color-wheel/
+*/
+/* pseudoclase: depende la la clase principal
+Ejemplo
+button:hover 
+hover:pasar por encima
+active: cuando se hace click
+link:para los links
+
+link, active
+buscar como hacer animaciones */

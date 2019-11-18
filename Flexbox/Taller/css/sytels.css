@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Livvic', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.global{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.margen{
+  padding-left:50px;
+  padding-right: 50px; 
+}
+header {
+  background-image: url(../img/tevin-trinh-byEie_vJPVs-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.parteSuperior {
+  background-color: rgba(0, 0, 0, 0.342);
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.logoEmpresa {
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: auto;
+font-weight: bold;
+font-size: 30px;
+}
+.logoEmpresa a {
+  color: white;
+}
+.logoEmpresa a:hover{
+  color: orangered;
+}
+nav {
+  color: white;
+  flex-grow: 3;
+flex-shrink: 3;
+flex-basis: auto;
+}
+nav a {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 10px;
+}
+nav a:hover{
+  color: orangered;
+}
+.logosRedesSociales img {
+  height: 30px;
+}
+.logosRedesSociales img:hover{
+  height: 40px;
+}
+.slogan {
+  background-color: rgba(0, 0, 0, 0.342);
+  margin-top: 2px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slogan h1 {
+  color: white;
+  text-align: center;
+  color: white;
+  font-size: 21px;
+}
+section {
+  display: flex;
+}
+.productosALaVenta {
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: auto;
+  display: flex;
+  flex-flow: row wrap;
+  width: 70%;
+}
+.producto {
+  font-size: 13px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40%;
+  background-color: rgb(237, 197, 245);
+  margin-top: 10px;
+  margin-right:  10px;
+}
+h2 a{
+color: black;
+font-size: 25px;
+padding-bottom: 10px;
+}
+h2 a:hover{
+  color: orangered;
+}
+.h3 {
+  color: black;
+  font-size: 13px;
+  padding-top: 10px;
+  margin-top: -80px;
+}
+p{
+  color: black;
+  padding-top: 6px;
+}
+.producto img {
+  width: 100%;
+}
+.publicidad {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: auto;
+}
+.publicidad a{
+  color: white;
+}
+.publicidad a:hover{
+  color: orangered;
+}
+.publicidad img {
+  width: 100%;
+}
+h4 {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  color: white;
+}
+footer a:hover{
+  color: orangered;
+}
+
+@media all and (max-width:1250px)
+{
+  .section{
+    flex-direction: column;
+  }
+  .publicidad {
+   display:flex;
+   justify-content: center;
+  }
+}
+
+@media all and (max-width:610px)
+{
+  .publicidad{
+    flex-direction: column;
+  }
+}
+@media all and (max-width:400px)
+{
+  .slogan h1{
+    font-size: 18px;
+  }
+}

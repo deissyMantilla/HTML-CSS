@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.global {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 50px;
+  grid-template-rows: 1fr 1fr 1fr 30px;
+  grid-template-areas:
+    "header header header header header "
+    ". article article aside ."
+    ". article article aside ."
+    "footer footer footer footer footer";
+}
+/* z-index: se usa para dar posicion a los elementos pero en 
+´lano de profundidad, se usa para sobreponer elementos */
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 50px;
+  grid-template-rows: 1fr 2fr;
+  background-image: url(../img/tevin-trinh-byEie_vJPVs-unsplash.jpg);
+  background-size: cover;
+}
+.logoEmpresa {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+.logoEmpresa h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+nav {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+nav a {
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 20px;
+  color: white;
+}
+.redesSociales {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+.redesSociales img {
+  width: 40px;
+  height: 40px;
+}
+section {
+  grid-column: 2 / span 3;
+  grid-row: 2 / 3;
+  text-align: right;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.527);
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section p {
+  color: white;
+  width: 100%;
+
+  text-align: center;
+}
+article {
+  margin-top: 10px;
+  grid-area: article;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+}
+.producto h3,
+.producto h2,
+.producto p {
+  background-color: rgb(240, 165, 138);
+  width: 100%;
+}
+.producto img {
+  width: 100%;
+}
+aside {
+  margin-left: 10px;
+  margin-top: 10px;
+  grid-area: aside;
+}
+aside p {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+aside img {
+  background-color: black;
+  width: 100%;
+}
+footer {
+  margin-top: 10px;
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+@media all and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .global {
+    grid-template-areas:
+      "header header header header header "
+      "article article article article article"
+      "aside aside aside aside aside"
+      "footer footer footer footer footer";
+  }
+}
+@media all and (max-width: 500px) {
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+}

@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    box-sizing: border-box; 
+    overflow : auto;
+    font-family: 'Roboto Slab', serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+.marca {
+    font-family: 'Lobster', cursive;
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+}
+nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 70%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    text-align: right;
+    font-size: 30px;
+}
+.slogan{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    height: 100%;
+    width: 30%;
+    text-align: right;
+    margin-bottom: 50px;
+}
+.logo{
+    
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.imagenSopa{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px; 
+    margin-left: 100px;
+}
+.menu{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    text-align: center;
+    background-color:  #50A9CC;
+    font-size: 50px;
+    width: 100%;
+}
+.tabla{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.colorFondoVerdeClaro {
+    background-color: #50A9CC;
+}
+.domicilios{
+    background-color: #50A9CC;
+}
+.enviarPedido{
+    cursor: pointer;
+}
+.explicacionDomicilios{
+    width: 30%;
+    height: 70%;
+    text-align: justify;
+    margin-left: 300px;
+    font-size: 25px;
+    margin-right: 50px;
+    padding-bottom: 100px
+    
+}
+.enLinea{
+    display: inline-block;
+}
+.fondoNegro{
+    background-color: black;
+    color:white;
+}
+.imagenesRedesSociales{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.redesSociales{
+    float: right;
+    margin-right: 300px;
+}
+.datosContacto{
+    float: left;
+    width: 30%;
+    margin-left: 300px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color:white;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 25px; 
+}
+nav > ul{
+    float:left;
+    font-size: 30px;
+}
+nav ul {
+    margin-right: 100px;
+}
+
+nav ul li:hover {
+    background-color:  grey;
+    border-radius: 2px;
+}
+nav li ul{
+    display: none;
+}
+nav li:hover > ul {
+    display: block;
+}
+.formularioDomicilios form label{
+    font-size: 20px;
+}
+.formularioDomicilios form text{
+    border-radius: 3px;
+}
+.formularioDomicilios form button{
+    height: 40px;
+    width: 150px;
+}
+.formularioDomicilios{
+    margin-left: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.formularioDomicilios form button:hover{
+    border-bottom-color:  grey;
+}
+
+.redesSociales img:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.datosContacto p:hover{
+    color: rgb(95, 128, 238);
+}
+
+/* .menu table td:nth-child(1){
+    width: 1px;
+}
+
+.menu table td:nth-child(2){
+    width: 2px;
+}
+ */
